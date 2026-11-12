@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#5b7fb4"/></marker>
+    <marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#d07a5a"/></marker>
+    <linearGradient id="fond" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f1b2d"/><stop offset="1" stop-color="#16263f"/></linearGradient>
+  </defs>
+  <rect width="960" height="430" rx="14" fill="url(#fond)"/>
+  <text x="32" y="42" fill="#e9eef6" font-size="20" font-weight="700">Un samedi soir de l'agent de fusion</text>
+  <text x="32" y="66" fill="#8fa3bf" font-size="13">repère avant tout · une branche à la fois · jamais de --force · aucune branche supprimée</text>
+
+  <!-- 1. poste prêté -->
+  <rect x="32" y="96" width="170" height="74" rx="10" fill="#1f3556" stroke="#3d6aa8"/>
+  <text x="48" y="122" fill="#e9eef6" font-size="14" font-weight="700">20 h : un poste libre</text>
+  <text x="48" y="142" fill="#b8c7dc" font-size="12">prêté par le gestionnaire</text>
+  <text x="48" y="159" fill="#b8c7dc" font-size="12">de postes, clone neuf</text>
+  <path d="M202,133 H236" stroke="#5b7fb4" stroke-width="2" marker-end="url(#f)"/>
+
+  <!-- 2. repère -->
+  <rect x="238" y="96" width="170" height="74" rx="10" fill="#1f3556" stroke="#3d6aa8"/>
+  <text x="254" y="122" fill="#e9eef6" font-size="14" font-weight="700">Tag de repère</text>
+  <text x="254" y="142" fill="#b8c7dc" font-size="12">fusion/avant-&lt;date&gt;</text>
+  <text x="254" y="159" fill="#b8c7dc" font-size="12">retour arrière immédiat</text>
+  <path d="M408,133 H442" stroke="#5b7fb4" stroke-width="2" marker-end="url(#f)"/>
+
+  <!-- 3. boucle de fusion -->
+  <rect x="444" y="96" width="236" height="74" rx="10" fill="#203a2e" stroke="#4f9a72"/>
+  <text x="460" y="122" fill="#e9eef6" font-size="14" font-weight="700">Chaque branche, la plus</text>
+  <text x="460" y="140" fill="#e9eef6" font-size="14" font-weight="700">ancienne d'abord</text>
+  <text x="460" y="159" fill="#b9d8c6" font-size="12">fusion sans avance rapide</text>
+
+  <!-- conflit -->
+  <path d="M562,170 V204" stroke="#5b7fb4" stroke-width="2" marker-end="url(#f)"/>
+  <rect x="444" y="206" width="236" height="56" rx="10" fill="#1a2a40" stroke="#3d6aa8"/>
+  <text x="460" y="230" fill="#e9eef6" font-size="14" font-weight="700">Conflit ?</text>
+  <text x="460" y="249" fill="#b8c7dc" font-size="12">oui → fusion annulée, mise de côté</text>
+  <path d="M680,234 H850 V312" stroke="#d07a5a" stroke-width="2" fill="none" marker-end="url(#r)"/>
+  <text x="700" y="226" fill="#e8b49f" font-size="12">bloquée</text>
+
+  <!-- compilation + tests -->
+  <path d="M562,262 V296" stroke="#5b7fb4" stroke-width="2" marker-end="url(#f)"/>
+  <rect x="444" y="298" width="236" height="74" rx="10" fill="#3a2a1c" stroke="#d29a4a"/>
+  <text x="460" y="323" fill="#e9eef6" font-size="14" font-weight="700">Compilation Unity</text>
+  <text x="460" y="342" fill="#e6cfae" font-size="12">+ tests EditMode en mode batch</text>
+  <text x="460" y="359" fill="#e6cfae" font-size="12">rouge → branche fautive retirée</text>
+  <path d="M680,346 H780" stroke="#d07a5a" stroke-width="2" fill="none" marker-end="url(#r)"/>
+
+  <!-- vert : push -->
+  <path d="M444,322 H360 V264" stroke="#4f9a72" stroke-width="2" fill="none" marker-end="url(#f)"/>
+  <text x="372" y="314" fill="#9fd3b5" font-size="12">vert</text>
+  <rect x="238" y="206" width="170" height="56" rx="10" fill="#203a2e" stroke="#4f9a72"/>
+  <text x="254" y="230" fill="#e9eef6" font-size="14" font-weight="700">master poussé</text>
+  <text x="254" y="249" fill="#b9d8c6" font-size="12">avance rapide seulement</text>
+
+  <!-- rapport -->
+  <rect x="782" y="314" width="150" height="88" rx="10" fill="#2c2140" stroke="#9a7fd0"/>
+  <text x="796" y="340" fill="#e9eef6" font-size="14" font-weight="700">Rapport</text>
+  <text x="796" y="360" fill="#d6cbef" font-size="12">fusionnées + tests</text>
+  <text x="796" y="377" fill="#d6cbef" font-size="12">1 décision A/B/C</text>
+  <text x="796" y="394" fill="#d6cbef" font-size="12">par branche bloquée</text>
+  <path d="M290,262 V392 H780" stroke="#5b7fb4" stroke-width="2" fill="none" marker-end="url(#f)"/>
+
+  <!-- fin -->
+  <rect x="32" y="206" width="170" height="74" rx="10" fill="#1f3556" stroke="#3d6aa8"/>
+  <text x="48" y="232" fill="#e9eef6" font-size="14" font-weight="700">Après le rapport</text>
+  <text x="48" y="252" fill="#b8c7dc" font-size="12">rapatrié, poste rendu,</text>
+  <text x="48" y="269" fill="#b8c7dc" font-size="12">copie de travail effacée</text>
+</svg>
